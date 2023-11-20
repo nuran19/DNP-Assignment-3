@@ -1,0 +1,50 @@
+@page "/ViewPostDetail"
+@page "/ViewPostDetail/{postId:int}"
+@using Domain.Models
+@using HttpClients.ClientInterfaces
+@inject IPostService postService;
+
+
+
+<h3>@(post != null ? post.Title : "Post not found")</h3>
+
+<b>@(post?.Owner?.UserName ?? "Unknown User")</b>
+
+<p><br /> @(post?.Content ?? "No content available")</p>
+
+
+
+@code {
+
+    [Parameter]
+    public int PostId { get; set; }
+
+    private IEnumerable<Post>? posts;
+    private Post? post = new Post();
+
+    private string msg = "";
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        msg = "";
+        try
+        {
+            await Task.Delay(1);
+            posts = await postService.GetAsync(PostId, null);
+            if (posts != null && posts.Any())
+            {
+                post = posts.First();
+            }
+            else
+            {
+                msg = "Post not found or the collection is empty.";
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+}

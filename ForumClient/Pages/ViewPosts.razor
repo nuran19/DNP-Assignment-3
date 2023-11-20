@@ -1,0 +1,78 @@
+@page "/ViewPosts"
+@using Domain.Models
+@using HttpClients.ClientInterfaces
+@inject IPostService postService;
+
+
+
+<h3 style="text-align: center">View all posts</h3>
+
+<div>
+    <button @onclick="LoadPosts">Load</button>
+</div>
+
+@if (!string.IsNullOrEmpty(msg))
+{
+    <div>
+        <span>@msg</span>
+    </div>
+}
+
+@if (posts == null)
+{
+    <span>Loading..</span>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Post ID</th>
+            <th>UserName</th>
+            <th>Post Title</th>
+            <th>Action</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in posts)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Owner.UserName</td>
+                <td>@item.Title</td>
+                <td>
+                    @* <button @onclick="(() => LoadPostById(item.Id))">Load</button> *@
+                    
+                    <a href="ViewPostDetail/@item.Id"  > Read more</a> 
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+@code {
+    private IEnumerable<Post>? posts;
+    private string msg = "";
+
+    /*protected override async Task OnInitializedAsync()
+    {
+        
+        LoadPosts();
+    }*/
+
+    private async Task LoadPosts()
+    {
+        try
+        {
+            posts = await postService.GetAsync(null, null);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+    
+   
+}

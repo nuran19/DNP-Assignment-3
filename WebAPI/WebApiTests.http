@@ -1,0 +1,14 @@
+// log in as Nuran
+POST http://localhost:5098/auth/login
+Content-Type: application/json
+
+{ "Username" : "user1", "Password" : "123456789" }
+
+
+
+
+
+
+###
+
+//GET https://localhost:7271/test/authorized

@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ForumClient
+build_property.RootNamespace = ForumClient
+build_property.ProjectDir = C:\Users\Bruger\RiderProjects\BlazorForumApp\ForumClient\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Bruger\RiderProjects\BlazorForumApp\ForumClient
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/ViewPostDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3REZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/ViewPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1Bvc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-j3hirp9ya7
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/CreateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-v4o8fb3iha
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/LoginButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5CdXR0b25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-byvcfne3n7
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Pages/UserLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckxvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-e8y33z5l41
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qs8ku44dqj
+
+[C:/Users/Bruger/RiderProjects/BlazorForumApp/ForumClient/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dj4zjrrlar
